@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleLoginForm</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="button">Login</string>
+    <string name="hello">Hello</string>
+    <string name="fullname">FULLNAME</string>
+</resources>
