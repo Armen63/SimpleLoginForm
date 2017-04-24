@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="@string/registration" />
+
+        <TextView
+            android:id="@+id/twUsernameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="42dp"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/etUsernameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/twUsernameReg"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/twPasswordReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/twUsernameReg"
+            android:layout_below="@+id/etUsernameReg"
+            android:layout_marginTop="38dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/etPasswordReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_alignTop="@+id/twPasswordReg"
+            android:layout_alignStart="@+id/etPasswordConfReg" />
+
+        <TextView
+            android:id="@+id/twPasswordRegConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/twPasswordReg"
+            android:layout_below="@+id/etPasswordReg"
+            android:layout_marginTop="27dp"
+            android:text="@string/confirm_password" />
+
+        <EditText
+            android:id="@+id/etPasswordConfReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_alignTop="@+id/twPasswordRegConfirm"
+            android:layout_alignStart="@+id/etUsernameReg" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/etPasswordConfReg"
+            android:layout_marginTop="39dp"
+            android:text="@string/ok"
+            android:onClick="registration"/>
+
+    </RelativeLayout>
+</LinearLayout>

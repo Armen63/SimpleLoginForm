@@ -40,6 +40,16 @@
         android:layout_marginTop="29dp"
         android:layout_below="@+id/etUsername"
         android:layout_alignStart="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/bRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/registration"
+        android:onClick="goToRegistration"
+        android:layout_below="@+id/bLogin"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
 
 </LinearLayout>

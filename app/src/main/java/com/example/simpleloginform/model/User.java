@@ -12,7 +12,7 @@ public class User {
     private String username = "a";
     private String password = "b";
     private String fullName;
-    private Map<String,String> loginPass = new HashMap<>();
+    private Map<String,String> mapOfLogPass = new HashMap<>();
     public Integer getId() {
         return id;
     }
@@ -26,18 +26,18 @@ public class User {
     }
 
     public void generateMap(){
-        loginPass.put("login1", "pass1");
-        loginPass.put("login2", "pass2");
-        loginPass.put("Armen", "nemra");
-        loginPass.put("123", "123");
-        loginPass.put("Username", "a");
+        mapOfLogPass.put("login1", "pass1");
+        mapOfLogPass.put("login2", "pass2");
+        mapOfLogPass.put("Armen", "nemra");
+        mapOfLogPass.put("123", "123");
+        mapOfLogPass.put("Username", "a");
     }
 
-    public Map<String, String> getLoginPass() {
-        return loginPass;
+    public Map<String, String> getMapOfLogPass() {
+        return mapOfLogPass;
     }
 
-    public void setLoginPass(Map<String, String> loginPass) {
-        this.loginPass = loginPass;
+    public void setMapOfLogPass(Map<String, String> mapOfLogPass) {
+        this.mapOfLogPass = mapOfLogPass;
     }
 }

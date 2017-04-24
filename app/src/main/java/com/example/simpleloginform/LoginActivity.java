@@ -32,9 +32,9 @@ public class LoginActivity extends AppCompatActivity {
         user.generateMap();
         Intent intent = new Intent(this, MainActivity.class);
         String getUsername = username.getText().toString();
-        for (String str : user.getLoginPass().keySet()) {
+        for (String str : user.getMapOfLogPass().keySet()) {
             if (username.getText().toString().equals(str)) {
-                if (password.getText().toString().equals(user.getLoginPass().get(str))){
+                if (password.getText().toString().equals(user.getMapOfLogPass().get(str))){
                     intent.putExtra("message", getUsername);
                     startActivity(intent);
                 }
@@ -42,5 +42,9 @@ public class LoginActivity extends AppCompatActivity {
                      Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+    public void goToRegistration(View view){
+        Intent intent = new Intent(this, RegistrationActivity.class);
+        startActivity(intent);
     }
 }

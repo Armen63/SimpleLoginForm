@@ -6,4 +6,7 @@
     <string name="button">Login</string>
     <string name="hello">Hello</string>
     <string name="fullname">FULLNAME</string>
+    <string name="registration">Registration</string>
+    <string name="confirm_password">Confirm</string>
+    <string name="ok">OK</string>
 </resources>
